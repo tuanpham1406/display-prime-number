@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Display Prime Number</title>
+</head>
+<body>
+<script>
+  let number = parseInt(prompt("Enter a number: "));
+  let sumPrime = 0;
+  for (let N = 2; N <= number; N++){
+      let  count = 0;
+      for (let i = 1; i <= N; i++){
+          if (N%i === 0){
+              count ++;
+          }
+      }
+      if (count === 2){
+          document.write(N + "<br>");
+          sumPrime ++;
+      }
+  }
+  document.write("Co tat ca " + sumPrime + " so nguyen to");
+</script>
+</body>
+</html>
